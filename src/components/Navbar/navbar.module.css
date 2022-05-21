@@ -1,0 +1,68 @@
+.navbarParent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+}
+
+.startSection,
+.midSection,
+.endSection {
+    display: flex;
+    justify-content: center;
+}
+
+.startSection {
+    width: 24%;
+}
+.midSection {
+    width: 48%;
+}
+.endSection {
+    width: 24%;
+}
+
+.musicBtn {
+    margin: 0 10px;
+}
+.midSectionContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    height: 49px;
+    padding: 0 20px;
+
+    background: #00b2c6;
+    border: 1.5px solid #007890;
+    box-shadow: inset 0px 3px 0px #91f0ff;
+    border-radius: 2rem;
+}
+.midSectionContent p {
+    font-family: "Fredoka";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbarParent {
+        flex-direction: column;
+    }
+    .midSectionContent {
+        width: 280px;
+        height: 39px;
+    }
+    .midSectionContent p {
+        font-size: 16px;
+    }
+    .startSection,
+    .midSection,
+    .endSection {
+        width: 100%;
+    }
+}
